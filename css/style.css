@@ -84,7 +84,6 @@ body {
   padding: 3rem 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-  /* grid-template-rows: repeat(2, 1fr); */
   grid-template-areas:
     'card-1 card-1 card-2 card-5'
     'card-3 card-4 card-4 card-5';
@@ -98,6 +97,8 @@ body {
 
 .card-1 {
   grid-area: card-1;
+  background: url(../images/bg-pattern-quotation.svg) no-repeat;
+  background-position: 80% 0%;
   background-color: var(--moderate-violet);
 }
 
@@ -129,23 +130,102 @@ body {
 }
 
 .card .user-info img {
-  width: 50px;
-  height: 50px;
+  /* width: 50px;
+  height: 50px; */
   object-fit: cover;
   border-radius: 50%;
 }
 
 .card .user-name h3 {
   font-weight: 500;
+  font-size: 17px;
+}
+
+.card .user-name p {
+  font-size: 15px;
+  padding-top: 3px;
 }
 
 .card h4 {
-  font-size: 18px;
-  padding-bottom: 1.5rem;
+  font-size: 20px;
+  padding-bottom: 1.3rem;
   font-weight: 600;
+  line-height: 26px;
 }
 
 .card > p:last-child {
   font-size: 14px;
   line-height: 22px;
+}
+
+.card-1 > h4,
+.card-2 > h4,
+.card-4 > h4 {
+  color: var(--white);
+}
+
+.card-3 > h4,
+.card-5 > h4 {
+  color: var(--very-dark-blackish-blue);
+}
+
+/* Individual card style */
+
+/* card-1 */
+.card-1 img {
+  border: 2px solid #a775f1;
+}
+
+.card-1 .user-name h3,
+.card-2 .user-name h3 {
+  color: var(--light-grayish-blue);
+}
+
+.card-1 .user-name p,
+.card-2 .user-name p {
+  color: hsl(210, 46%, 95%, 0.5);
+}
+
+.card-1 > p:last-child,
+.card-2 > p:last-child {
+  color: hsl(210, 46%, 95%, 0.7);
+}
+
+/* card-2 */
+.card-2 img {
+  border: 2px solid var(--white);
+}
+
+/* card-3 */
+
+.card-3 .user-name h3,
+.card-5 .user-name h3 {
+  color: var(--very-dark-grayish-blue);
+}
+
+.card-3 .user-name p,
+.card-5 .user-name p {
+  color: hsl(217, 19%, 35%, 0.5);
+}
+
+.card-3 > p:last-child,
+.card-5 > p:last-child {
+  color: hsl(217, 19%, 35%, 0.7);
+}
+
+/* card-4 */
+.card-4 img {
+  border: 2px solid #a775f1;
+}
+
+.card-4 .user-name h3 {
+  color: var(--white);
+}
+
+.card-4 .user-name p {
+  color: hsl(0, 0%, 100%, 0.5);
+}
+
+.card-4 > p:last-child {
+  color: hsl(0, 0%, 100%, 0.7);
 }
