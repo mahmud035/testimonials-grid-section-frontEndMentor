@@ -60,6 +60,7 @@ select {
 
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
+  overflow-x: hidden;
 }
 
 /* Common CSS Classes */
@@ -67,4 +68,14 @@ body {
   max-width: 1440px;
   width: 80%;
   margin-inline: auto;
+}
+
+/** Testimonials Grid Section */
+.main-container {
+  width: 100vw;
+  min-height: 100vh;
+  background: var(--light-grayish-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
