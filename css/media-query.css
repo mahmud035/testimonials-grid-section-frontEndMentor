@@ -1,7 +1,46 @@
+@media (max-width: 1400px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-template-areas:
+      'card-1 card-1 card-5'
+      'card-2 card-3 card-5'
+      'card-4 card-4 .';
+  }
+}
+
+@media (max-width: 1050px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-template-areas:
+      'card-1 card-1 card-2'
+      'card-3 card-4 card-4'
+      'card-5 card-5 card-5';
+  }
+}
+
+@media (max-width: 992px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-template-areas:
+      'card-1 card-2'
+      'card-3 card-4 '
+      'card-5 card-5';
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    grid-template-areas:
+      'card-1 card-1'
+      'card-2 card-3 '
+      'card-4 card-4'
+      'card-5 card-5';
+  }
+}
+
 @media (max-width: 576px) {
   .card-container {
-    padding: 3rem 0;
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
       'card-1 '
@@ -9,6 +48,5 @@
       'card-3'
       'card-4'
       'card-5';
-    gap: 1.5rem;
   }
 }
