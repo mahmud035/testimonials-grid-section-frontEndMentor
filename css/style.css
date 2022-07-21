@@ -66,7 +66,7 @@ body {
 /* Common CSS Classes */
 .container {
   max-width: 1440px;
-  width: 80%;
+  width: 85%;
   margin-inline: auto;
 }
 
@@ -78,4 +78,45 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.card-container {
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  /* grid-template-rows: repeat(2, 1fr); */
+  grid-template-areas:
+    'card-1 card-1 card-2 card-5'
+    'card-3 card-4 card-4 card-5';
+  gap: 1.5rem;
+}
+
+.card {
+  border-radius: 8px;
+  padding: 2rem;
+}
+
+.card-1 {
+  grid-area: card-1;
+  background-color: var(--moderate-violet);
+}
+
+.card-2 {
+  grid-area: card-2;
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.card-3 {
+  grid-area: card-3;
+  background-color: var(--white);
+}
+
+.card-4 {
+  grid-area: card-4;
+  background-color: var(--very-dark-blackish-blue);
+}
+
+.card-5 {
+  grid-area: card-5;
+  background-color: var(--white);
 }
